@@ -6073,7 +6073,10 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #3f1abc !important;
+  /*background-color: #3f1abc;*/
+  background: rgb(28,4,112);
+background: linear-gradient(90deg, rgba(28,4,112,1) 0%, rgba(47,10,177,1) 35%, rgba(105,71,224,1) 100%) !important;
+
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -10276,4 +10279,17 @@ form .row:first-child .floating-label-form-group {
 #myBtn:hover {
   background-color: rgb(61, 8, 184); /* Add a dark-grey background on hover */
   color: rgb(71, 12, 235) i !important;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  position: sticky;
+  right: 0;
+  bottom: 0;
+  min-width:100%;
+  min-height: 100%;
+}
+
+#bg-video{
+
 }
