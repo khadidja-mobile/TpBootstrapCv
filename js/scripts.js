@@ -158,3 +158,6 @@ function tirage() {
   tab.length > 0 ? $("#resultat").html("Tirage d'un nombre au hasard : " + tab[rand]) :
   alert("veuillez rentrer des valeurs");
 }
+
+// All animations will take half the time to accomplish
+document.documentElement.style.setProperty('--animate-duration', '.5s');
