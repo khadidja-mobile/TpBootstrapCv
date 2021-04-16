@@ -23,7 +23,7 @@
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top"><i class="fas fa-address-card"></i> <img src="https://fr.freepik.com/vecteurs-libre/concept-logo-marque-lettre-s-dans-style-dore_6918315.htm#page=1&query=logo&position=2" alt="" width=100></a>
+            <a class="navbar-brand js-scroll-trigger" href="#page-top"><i class="fas fa-address-card"></i></a>
             <button
                 class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded"
                 type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
@@ -33,6 +33,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                        href="#"><img class="rounded-circle" src="assets/img/logo2.png" width="80" alt="logo" title="un logo"></a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
                             href="#portfolio">Portfolio</a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
@@ -47,7 +49,7 @@
     <header class="masthead bg-primary text-white text-center">
         <div class="container d-flex align-items-center flex-column">
             <!-- Masthead Avatar Image-->
-            <img class="masthead-avatar mb-5 circle" src="assets/img/ki.jfif" alt="" />
+            <img class="masthead-avatar mb-5 rounded-circle" src="assets/img/ki.jfif" alt="" />
             <!-- Masthead Heading-->
             <h1 class="masthead-heading text-uppercase mb-0">Tp Bootsrap Portfolofio</h1>
             <!-- Icon Divider-->
@@ -62,7 +64,7 @@
                 adip</p>
         </div>
         <div class="text-center mt-4">
-            <a class="btn btn-xl btn-outline-light" href="#portfolio">
+            <a class="btn btn-xl btn-outline-light btn-white" href="#portfolio">
 
                 <i class="far fa-hand-point-down"></i>
             </a>
@@ -217,8 +219,9 @@
                 <p>This is some text.</p>
                 <p>This is another text.</p>
             </div>
+            </section>
             <hr>
-            <section class="grille">
+            <section class="grille container">
                 <h4>Grid images</h4>
                 <button class="btn btn-success" onclick="one()">1</button>
                 <button class="btn btn-success" onclick="two()">2</button>
@@ -267,7 +270,7 @@
                 </div>
             </section>
         <hr>
-            <section>
+            <section class="container">
                 <h4>Modals</h4>
                 <!-- Trigger the modal with a button -->
                 <button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal">
@@ -295,16 +298,30 @@
                 </div>
             </section>
             <hr>
-            <section>
+            <section class="container">
                 <h3>Bouton retour en haut</h3>
-                <button class="btn btn-outline-light" onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+                <button class="btn btn-primary" onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
             </section>
             <hr>
-            <section>
+            <section class="container">
                 <h4>Bonus : Implementez le jeu du nombre magique qui demande à 
                     l'utilisateur de trouver un nombre entre 1 et 100, il aura 10 essais</h4>
-            <button class="btn btn-danger" id="jeu">Commencer le jeu</button>
-                </section>
+                    <button class="btn btn-danger" id="jeu">Commencer le jeu</button>
+            </section>
+            <hr>
+            <section class="container">
+                <h3>Git</h3>
+                <p>git flow feature start indexpage</p>
+                <p>Travail sur la page en local pour "Optimisation structure index.html"</p>
+                <ul>
+                <li>‐ git add index.html</li>
+                <li>‐ git commit ‐m "[VOS_INITIALES] Optimisation structure page HTML"</li>
+                <li>‐ git push origin feature/indexpage</li>
+                <p>Travail sur la page en local pour "Création de contenu"</p>
+                
+            </section>
+
+            <hr>
             <!-- Réalisations Section Button-->
             <div class="text-center mt-4">
                 <a class="btn btn-xl btn-outline-light" href="#contact">
@@ -360,7 +377,7 @@
                                 <label>Message</label>
                                 <textarea class="form-control" id="message" rows="5" placeholder="Message"
                                     required="required"
-                                    data-validation-required-message="Please enter a message."></textarea>
+                                    data-validation-required-message="Entrer un message."></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>

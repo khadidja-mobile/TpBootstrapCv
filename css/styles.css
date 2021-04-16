@@ -10239,7 +10239,6 @@ form .row:first-child .floating-label-form-group {
   background-color: #1d0169;
 }
 
-
 .grille .row {
   display: flex;
   flex-wrap: wrap;
@@ -10257,7 +10256,8 @@ form .row:first-child .floating-label-form-group {
   vertical-align: middle;
 }
 
-// boutton .align-top#myBtn {
+/* boutton */
+.align-top#myBtn {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
   bottom: 20px; /* Place the button at the bottom of the page */
@@ -10265,8 +10265,8 @@ form .row:first-child .floating-label-form-group {
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: rgb(120, 35, 231); /* Set a background color */
-  color: white; /* Text color */
+  background-color: rgb(120, 35, 231) i !important; /* Set a background color */
+  color: rgb(230, 27, 179) i !important; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */
   border-radius: 10px; /* Rounded corners */
@@ -10275,5 +10275,5 @@ form .row:first-child .floating-label-form-group {
 
 #myBtn:hover {
   background-color: rgb(61, 8, 184); /* Add a dark-grey background on hover */
-  color: #fff;
+  color: rgb(71, 12, 235) i !important;
 }
