@@ -303,10 +303,42 @@
                 <button class="btn btn-primary" onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
             </section>
             <hr>
+
             <section class="container">
-                <h4>Bonus : Implementez le jeu du nombre magique qui demande à 
-                    l'utilisateur de trouver un nombre entre 1 et 100, il aura 10 essais</h4>
-                    <button class="btn btn-danger" id="jeu">Commencer le jeu</button>
+                <h4>Jeu Bonus</h4>
+                <!-- Trigger the modal with a button -->
+                <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#gameModal">
+                    Commencer le jeu</button>
+
+                <!-- Modal -->
+                <div id="gameModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Tirage</h4>
+                            </div>
+                            <div class="modal-body">
+                                <h6 class="text-success"></h6>
+                                <p>Bonus : Implementez le jeu du nombre magique qui demande à 
+                                    l'utilisateur de trouver un nombre entre 1 et 100, il aura 10 essais</p>
+                                <p id="resultat" class="text-info"></p>
+                                <form>
+                                    <label for="nb">Entrer un chiffre entre 1 et 100</label>
+                                    <input type="number" id="nb" name="nb">
+                                    <input id="envoyer" type="submit" value="envoyer">
+                                    <input type="reset" value="annuler">
+                                    <input id="tirage" type="submit" value="tirage">
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
             <hr>
             <section class="container">
@@ -318,7 +350,19 @@
                 <li>‐ git commit ‐m "[VOS_INITIALES] Optimisation structure page HTML"</li>
                 <li>‐ git push origin feature/indexpage</li>
                 <p>Travail sur la page en local pour "Création de contenu"</p>
-                
+                <ul>
+                    <li>‐ git add index.html</li>
+                    <li>‐ git commit ‐m "[VOS_INITIALES] Création de contenu index.html"</li>
+                    <li>‐ git push origin feature/indexpage</li>
+                </ul>
+                <p>Travail sur la page en local pour "Optimisation du style"</p>
+                <ul>
+                    <li>‐ git add index.html</li>
+                    <li>‐ git commit ‐m "[VOS_INITIALES] Optimisation style index.html"</li>
+                    <li>‐ git push origin feature/indexpage</li>
+                    <li>‐ git flow feature finish indexpage</li>
+                </ul>
+                <p>Release V1.0.1</p>
             </section>
 
             <hr>

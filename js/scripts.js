@@ -127,11 +127,34 @@ function topFunction() {
 }
 
 (function($) {
-  "use strict";
-$("#jeu").click(function(e) {
-  for (var i = 0; i <10; i++) {
-    var x = prompt("Trouvez un nombre entre 1 et 100");
-  }
+
+$("#envoyer").click(function(event) {
+   // var x = prompt("Trouvez un nombre entre 1 et 100");
+    add_nombre();
+    event.preventDefault();
+  });
+
+$("#tirage").click(function(event) {
+  var x = tirage();
+  $("#resultat").html(x);
+  console.log("tirage : " + x);
+  event.preventDefault();
 });
 
 })(jQuery);
+
+var tab = new Array();
+for (var i = 0; i < 10; i++) {
+add_nombre = () => {
+  var nb = $("#nb").val();
+  //tab.push($("#nb").val());
+  tab.push(nb);
+  console.log(tab);
+};
+}
+
+function tirage() {
+  var rand = Math.floor(Math.random() * tab.length);
+  tab.length > 0 ? $("#resultat").html("Tirage d'un nombre au hasard : " + tab[rand]) :
+  alert("veuillez rentrer des valeurs");
+}
