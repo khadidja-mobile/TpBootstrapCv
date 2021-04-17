@@ -10280,7 +10280,7 @@ form .row:first-child .floating-label-form-group {
 
 #myBtn:hover {
   background-color: rgb(61, 8, 184); /* Add a dark-grey background on hover */
-  color: rgb(71, 12, 235) i !important;
+  color: rgb(71, 12, 235) !important;
 }
 
 /* Style the video: 100% width and height to cover the entire window */
